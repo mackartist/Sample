@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Perameters for body elements */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .bg-img {
+        /* The image used */
+        background-image: url("bgimg-1.jpg");
+        height: 100vh;
+        width: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* Needed to position the navbar */
+        position: relative;
+      }
+
+      div.bgimg2 {
+        background-image: url("bgimg-2.jpg");
+        height: 50vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+      
+        div.bgimg3 {
+        background-image: url("bgimg-3.jpg");
+        height: 50vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+      }
+
+
+      /* Position the navbar container inside the image */
+      .container {
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        background-color: none;
+      }
+
+      /* The navbar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Navbar links */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      div.p-text {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+      }
+      /* First section elements */
+      section.section-one {
+        text-align: center;
+        padding: 20px;
+      }
+      div.stats-row {
+        background: #333;
+        color: white;
+        padding: 10px;
+       
+      }
+      div.stats {
+        text-align: center;
+        margin-left: 13em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    div.imgtext {
+      text-align: center;
+      background: black;
+      color: white;
+      
+    }
+ 
+   /* background image and text */
+      div.p-text2 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        width: 250px;
+        height: 100px;
+        padding: 30px;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+   /* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer.footer-text {
+  text-align: center;
+  background-color: #333;
+  color: #ddd;
+  margin: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+ .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  footer.footer-text, .column, .grid, div.stats-row {
+    width: 100%;
+  }
+}
+
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  padding: 30px;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
+
+  
+    </style>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <div class="topnav">
+          <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+          <a href="#A1"><i class="fa fa-user"></i>ABOUT</a>
+          <a href="#A2"><i class="fa fa-th"></i>PORTFOLIO</a>
+          <a href="#A3"><i class="fa fa-envelope"></i>CONTACT</a>
+        </div>
+        <div class="p-text">CREATIVE CONCEPTS BY T</div>
+      </div>
+    </div>
+    <section class="section-one">
+      <h2 id="A1">About Us</h2>
+      <p>
+        We are a full-service wedding and event planning company dedicated to
+        once-in-a-lifetime celebrations. Let I Do… make your vision a reality.
+        Whether you’re planning an intimate affair, or an elaborate celebration;
+        you deserve to have a coordinator that will help you every step of the
+        way. We will assist in keeping you organized, and ensure that not even
+        the smallest details get overlooked.Our coordinators will advise you in
+        designing, organizing, and executing your event, while making sure your
+        style and personality shines through
+      </p>
+    </section>
+    <!-- stats info set in a row --> 
+    <div class="stats-row"><table>
+      <tr>
+        <td><div class="stats"><span class="statplus">14+</span><br />Partners</td></div>
+      <td><div class="stats">
+        <span class="statplus">20+</span><br />Projects Done</td>
+      </div>
+      <td><div class="stats">
+        <span class="statplus">20+</span><br />Happy Clients</td>
+      </div>
+      <td><div class="stats"><span class="statplus">20+</span><br />Meetings</td></div>
+    </tr>
+  </table>
+    </div>
+    <div class="bgimg2"><div class="p-text2"><span class="border"></span> PORTFOLIO</div></div>
+    <section class="section-two">
+      
+      <!-- MAIN (Center website) -->
+<div class="main">
+    <h2 id="A2">THE GALLERY</h2>
+ 
+    <p>Here is some of our work</p>
+    
+    <i>Click on photo to enlarge</i>
+   
+  <!-- Portfolio Gallery Grid -->
+
+<main class="grid">
+  <img src="isle.jpg" alt="isle">
+  <img src="candle.jpg" alt="candles">
+  <img src="tableset.jpg" alt="tableset">
+  <img src="roses.jpg" alt="roses">
+  <img src="arangement.jpg" alt="arangement">
+  <img src="rings.jpg" alt="rings">
+</main>
+</div>
+  
+
+    </section>
+    <div class="bgimg3"><div class="p-text2">CONTACT</div></div>
+    <div class="forms-container2">
+        <div style="text-align:center">
+          <h2 id="A3">Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column2">
+            <img src="catus.jpg" style="width:100%">
+          </div>
+          <div class="column2">
+            <form action="POST" data-netlify="true">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+               <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+              <input type="file" name="myfile" id="myfile" placeholder="Upload File">
+              <div data-netlify-recaptcha="true"></div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-text">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pininterest"></i>
+          All rights confirm with Creative Concepts by T<i class="fa fa-copyright"></i>
+        </footer> 
+  </body>
+</html>
