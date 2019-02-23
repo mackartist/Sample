@@ -10,12 +10,21 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+
     <style>
+      /* Style html and body */
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
       /* Perameters for body elements */
       body {
-        font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-
       }
       * {
         box-sizing: border-box;
@@ -23,7 +32,7 @@
 
       .bg-img {
         /* The image used */
-        background-image: url("bgimg-1.jpg");
+        background-image: url("img/bgimg-1.jpg");
         height: 100vh;
         width: 100%;
 
@@ -36,25 +45,16 @@
         position: relative;
       }
 
+      div.bgimg3,
       div.bgimg2 {
-        background-image: url("bgimg-2.jpg");
+        background-image: url("img/bgimg-3.jpg");
         height: 50vh;
         width: 100%;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        }
-      
-        div.bgimg3 {
-        background-image: url("bgimg-3.jpg");
-        height: 50vh;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        
       }
-
 
       /* Position the navbar container inside the image */
       .container {
@@ -100,26 +100,14 @@
         text-align: center;
         padding: 20px;
       }
-      div.stats-row {
-        background: #333;
-        color: white;
-        padding: 10px;
-       
-      }
-      div.stats {
+
+      div.imgtext {
         text-align: center;
-        margin-left: 13em;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        background: black;
+        color: white;
       }
-    div.imgtext {
-      text-align: center;
-      background: black;
-      color: white;
-      
-    }
- 
-   /* background image and text */
+
+      /* background image and text */
       div.p-text2 {
         position: relative;
         top: 50%;
@@ -132,146 +120,140 @@
         width: 250px;
         height: 100px;
         padding: 30px;
-        background-size: cover; 
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
       }
-      
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+      }
 
-.row {
-  margin: 8px -16px;
-}
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
+      .row {
+        margin: 8px -16px;
+      }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+      /* Add padding BETWEEN each column (if you want) */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      /* Create four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+      }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
+      /* Content */
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
 
-   /* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+      /* Style inputs */
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
 
-/* Style the container/contact section */
-.container2 {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
+      /* Style the container/contact section */
+      .container2 {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
 
-/* Create two columns that float next to eachother */
-.column2 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
+      /* Create two columns that float next to eachother */
+      .column2 {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
+      footer.footer-text {
+        text-align: center;
+        background-color: #333;
+        color: #ddd;
+        margin: 0;
+        padding: 40px;
+        width: 100%;
+        height: 20%;
+      }
 
-footer.footer-text {
-  text-align: center;
-  background-color: #333;
-  color: #ddd;
-  margin: 0;
-  padding: 40px;
-  width: 100%;
-  height: 100%;
-}
+      /* Grid for the gallery */
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column2, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+        justify-items: center;
+        padding: 30px;
+      }
+      .grid img {
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+      }
+      /* Grid for the the stats */
+      .grid-container {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 50px 50px 50px 50px; /*Make the grid smaller than the container*/
+        grid-gap: 10px;
+        background-color: #333;
+        padding: 10px;
+        color: white;
+      }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
- .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  footer.footer-text, .column, .grid, div.stats-row {
-    width: 100%;
-  }
-}
-
-.grid { 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  align-items: stretch;
-  justify-items: center;
-  padding: 30px;
-  }
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-
-
-  
+      .grid-container > div {
+        background-color: none;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
@@ -299,78 +281,96 @@ footer.footer-text {
         style and personality shines through
       </p>
     </section>
-    <!-- stats info set in a row --> 
-    <div class="stats-row"><table>
-      <tr>
-        <td><div class="stats"><span class="statplus">14+</span><br />Partners</td></div>
-      <td><div class="stats">
-        <span class="statplus">20+</span><br />Projects Done</td>
-      </div>
-      <td><div class="stats">
-        <span class="statplus">20+</span><br />Happy Clients</td>
-      </div>
-      <td><div class="stats"><span class="statplus">20+</span><br />Meetings</td></div>
-    </tr>
-  </table>
+    <!-- stats info set in a grid -->
+
+    <div class="grid-container">
+      <div>Partners</div>
+      <div>Projects</div>
+      <div>Clients</div>
+      <div>Meetings</div>
+      <div>30+</div>
+      <div>20+</div>
+      <div>20+</div>
+      <div>20+</div>
     </div>
-    <div class="bgimg2"><div class="p-text2"><span class="border"></span> PORTFOLIO</div></div>
+    <div class="bgimg2">
+      <div class="p-text2"><span class="border"></span> PORTFOLIO</div>
+    </div>
     <section class="section-two">
-      
       <!-- MAIN (Center website) -->
-<div class="main">
-    <h2 id="A2">THE GALLERY</h2>
- 
-    <p>Here is some of our work</p>
-    
-    <i>Click on photo to enlarge</i>
-   
-  <!-- Portfolio Gallery Grid -->
+      <div class="main">
+        <h2 id="A2">THE GALLERY</h2>
 
-<main class="grid">
-  <img src="isle.jpg" alt="isle">
-  <img src="candle.jpg" alt="candles">
-  <img src="tableset.jpg" alt="tableset">
-  <img src="roses.jpg" alt="roses">
-  <img src="arangement.jpg" alt="arangement">
-  <img src="rings.jpg" alt="rings">
-</main>
-</div>
-  
+        <p>Here is some of our work</p>
 
+        <i>Click on photo to enlarge</i>
+
+        <!-- Portfolio Gallery Grid -->
+
+        <main class="grid">
+          <img src="img/isle.jpg" alt="isle" />
+          <img src="img/candle.jpg" alt="candles" />
+          <img src="img/tableset.jpg" alt="tableset" />
+          <img src="img/roses.jpg" alt="roses" />
+          <img src="img/arangement.jpg" alt="arangement" />
+          <img src="img/rings.jpg" alt="rings" />
+        </main>
+      </div>
     </section>
     <div class="bgimg3"><div class="p-text2">CONTACT</div></div>
     <div class="forms-container2">
-        <div style="text-align:center">
-          <h2 id="A3">Contact Us</h2>
-          <p>Swing by for a cup of coffee, or leave us a message:</p>
-        </div>
-        <div class="row">
-          <div class="column2">
-            <img src="catus.jpg" style="width:100%">
-          </div>
-          <div class="column2">
-            <form action="POST" data-netlify="true">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Your email..">
-               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-              <input type="file" name="myfile" id="myfile" placeholder="Upload File">
-              <div data-netlify-recaptcha="true"></div>
-            </form>
-            
-          </div>
+      <div style="text-align:center">
+        <h2 id="A3">Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <img src="img/catus.jpg" alt="tablesetting" width="100%" height="100%" />
+      <div class="row">
+        <div class="column2">
+          <form action="POST" data-netlify="true">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+            <input
+              type="file"
+              name="myfile"
+              id="myfile"
+              placeholder="Upload File"
+            />
+            <div data-netlify-recaptcha="true"></div>
+          </form>
         </div>
       </div>
+    </div>
 
-      <footer class="footer-text">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-pininterest"></i>
-          All rights confirm with Creative Concepts by T<i class="fa fa-copyright"></i>
-        </footer> 
+    <footer class="footer-text">
+      <i class="fab fa-facebook"></i>
+      <a href="https://www.instagram.com/creativeconceptsbyt/">
+        <i class="fab fa-instagram"></i
+      ></a>
+      <i class="fab fa-twitter"></i>
+
+      All rights confirm with Creative Concepts by T<i
+        class="fa fa-copyright"
+      ></i>
+    </footer>
   </body>
 </html>
